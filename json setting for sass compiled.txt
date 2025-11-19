@@ -1,0 +1,9 @@
+
+
+//custom sass
+sass --watch ./scss/custom.scss ./css/style.css
+
+//json
+"scripts": {
+  "dev": "sass --watch ./scss/custom.scss ./css/style.css"
+}

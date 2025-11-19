@@ -1,0 +1,65 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Override Bootstrap default font
+$font-family-sans-serif: "Merriweather Sans", sans-serif;
+
+
+// custom colors
+$blue1: #004fe1; 
+$blue2: #03c1f4; 
+$blue3: #09e0fe;
+$blue4: #8CA9FF;
+$black1: #132440;
+
+
+// 2. Override the $theme-colors map
+$theme-colors: (
+  "blue1": $blue1,
+  "blue2": $blue2,
+  "blue3": $blue3,
+  "blue4": $blue4,
+  "black1": $black1,
+  
+);
+
+
+// Import Bootstrap SCSS
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// 1. Import functions first
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Import variables because we need maps
+@import "../node_modules/bootstrap/scss/variables";
+
+// 3. Import utility API
+@import "../node_modules/bootstrap/scss/utilities";
+
+// ⭐ 4. Add your custom width utilities into the $utilities map
+$utilities: map-merge(
+  $utilities,
+  (
+    "custom-width": (
+      property: width,
+      class: w,
+      values: (
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        30: 30%,
+        40: 40%,
+        65: 65%,
+        90: 90%,
+        120: 120%,
+        150: 150%,
+        200p: 200%      // px or % works
+      )
+    )
+  )
+);
+
+// 5. Generate utilities
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+

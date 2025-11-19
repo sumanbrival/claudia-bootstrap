@@ -1,0 +1,42 @@
+Fisioterapia
+Quiropraxia
+Massagem
+Drenagem linfática
+Limpeza de pele
+Peling
+Pós-operatório
+Tratamento facias
+Trapia-neural
+
+
++55 1197114-0308
+
+leitemonteiroclaudia@gmail.com
+
+"scripts": {
+  "dev": "sass --watch ./scss/custom.scss ./css/style.css"
+}
+
+sass scss/custom.scss css/style.css
+
+
+window 11 blue: #004fe1
+
+#08a1f7
+#03c1f4
+#09e0fe
+#8CA9FF
+
+custom google fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.merriweather-sans-<uniquifier> {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+container-fluid
