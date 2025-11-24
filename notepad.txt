@@ -19,24 +19,10 @@ leitemonteiroclaudia@gmail.com
 
 sass scss/custom.scss css/style.css
 
-
-window 11 blue: #004fe1
-
-#08a1f7
-#03c1f4
-#09e0fe
-#8CA9FF
-
-custom google fonts
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
-.merriweather-sans-<uniquifier> {
-  font-family: "Merriweather Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 container-fluid
+
+
+insta - https://www.instagram.com/fisio_estetica_bem_estar/
+
+
+

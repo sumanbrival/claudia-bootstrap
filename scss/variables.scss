@@ -1,0 +1,20 @@
+$theme-colors: (
+  "primary": #ff5722,     // change color
+  "secondary": #4a5568,   // change color
+  "success": #22c55e,     // change color
+  "info": #06b6d4,        // change color
+  "warning": #fbbf24,     // change color
+  "danger": #ef4444,      // change color
+  "light": #f3f4f6,       // change color
+  "dark": #111827         // change color
+);
+
+// Optional: add your own custom colors
+$custom-colors: (
+  "roxo": #a29bfe,
+
+ 
+);
+
+// Merge custom colors into theme
+$theme-colors: map-merge($theme-colors, $custom-colors);
