@@ -11,10 +11,27 @@ $theme-colors: (
 
 // Optional: add your own custom colors
 $custom-colors: (
-  "roxo": #a29bfe,
+  "roxo1": #a29bfe,
+  "roxo2": #6c5ce7,
 
  
 );
 
 // Merge custom colors into theme
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// 1. Custom Hover Colors
+$custom-hover-colors: (
+    claudia1: #2d3436,
+);
+
+// 2. Generate text-hover-* classes
+@each $name, $color in $custom-hover-colors {
+  .text-hover-#{$name} {
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color !important;
+    }
+  }
+}
