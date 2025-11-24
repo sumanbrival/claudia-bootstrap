@@ -1,12 +1,5 @@
 $theme-colors: (
   "primary": #ff5722,     // change color
-  "secondary": #4a5568,   // change color
-  "success": #22c55e,     // change color
-  "info": #06b6d4,        // change color
-  "warning": #fbbf24,     // change color
-  "danger": #ef4444,      // change color
-  "light": #f3f4f6,       // change color
-  "dark": #111827         // change color
 );
 
 // Optional: add your own custom colors
@@ -14,7 +7,6 @@ $custom-colors: (
   "roxo1": #a29bfe,
   "roxo2": #6c5ce7,
 
- 
 );
 
 // Merge custom colors into theme
@@ -22,7 +14,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 1. Custom Hover Colors
 $custom-hover-colors: (
-    claudia1: #2d3436,
+  claudia1: #2d3436, //text-hover-claudia1
+  claudia2: #6c5ce7, //text-hover-claudia2
+  white: #fff, //text-hover-white
 );
 
 // 2. Generate text-hover-* classes
@@ -35,3 +29,41 @@ $custom-hover-colors: (
     }
   }
 }
+
+/////////////////////////////////////////////////
+
+$custom-border-colors: (
+  "claudia-border": #6c5ce7, //border-claudia-border
+);
+
+// 1. Generate custom border classes
+@each $name, $color in $custom-border-colors {
+  .border-#{$name} {
+    border: 1px solid $color !important;
+  }
+}
+
+//////////////////////////////////////////////// 
+
+// Create your custom hover colors here
+$bg-hover-colors: (
+  "claudia1": #6c5ce7, //bg-hover-claudia1
+  
+);
+
+// Mixin to generate hover background classes
+@mixin bg-hover($color) {
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $color !important;
+  }
+}
+
+// Loop to create each class
+@each $name, $color in $bg-hover-colors {
+  .bg-hover-#{$name} {
+    @include bg-hover($color);
+  }
+}
+
+
