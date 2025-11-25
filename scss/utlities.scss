@@ -15,14 +15,14 @@ $spacers: (
   13: $spacer * 8,   
   14: $spacer * 10,   
   15: $spacer * 15,   
-  16: $spacer * 20,   
+  16: $spacer * 20,     
 );
 
 // Custom responsive video style
 .video-responsive {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 
@@ -38,6 +38,6 @@ $spacers: (
 
   // LG (≥992px)
   @include media-breakpoint-up(lg) {
-    max-width: 1250px;   // Video size on large devices
+    max-width: 900px;   // Video size on large devices
   }
 }

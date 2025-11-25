@@ -9,6 +9,7 @@ $font-family-base: $body-font !default;
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
 
 
 
@@ -65,7 +66,7 @@ p {
   line-height: 1.6; // example: type-p
 }
 
-
+@import "partials/responsive-video";
 @import "utlities.scss";
 @import "variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
