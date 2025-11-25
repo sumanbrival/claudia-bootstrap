@@ -32,8 +32,10 @@ $custom-hover-colors: (
 
 /////////////////////////////////////////////////
 
+// Create your custom border-hover colors
 $custom-border-colors: (
-  "claudia-border": #6c5ce7, //border-claudia-border
+  "myborder": #6c5ce7, //border-claudia-border
+  
 );
 
 // 1. Generate custom border classes
@@ -43,9 +45,17 @@ $custom-border-colors: (
   }
 }
 
+/////////////////////////////////////////////////
+// Create your no-border-hover
+.no-border-hover {
+  &:hover {
+    border: none !important; // !important is used for overriding Bootstrap's default styles
+  }
+}
+
 //////////////////////////////////////////////// 
 
-// Create your custom hover colors here
+// Create your custom bg-hover colors
 $bg-hover-colors: (
   "claudia1": #6c5ce7, //bg-hover-claudia1
   

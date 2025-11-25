@@ -11,6 +11,8 @@ $font-family-base: $body-font !default;
 @import "../node_modules/bootstrap/scss/mixins";
 
 
+
+
 $headings-font-family: $heading-font;
 
 $type-scale: (
@@ -63,8 +65,12 @@ p {
   line-height: 1.6; // example: type-p
 }
 
+
+@import "utlities.scss";
 @import "variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/utilities";
+
 
 
 
