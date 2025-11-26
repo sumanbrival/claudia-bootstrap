@@ -22,7 +22,7 @@ $type-scale: (
   h3: (size: 2rem,   weight: 600, style: normal),
   h4: (size: 1.10rem, weight: 500, style: normal),
   h5: (size: 1.15rem,weight: 400, style: normal),
-  h6: (size: 1rem,   weight: 300, style: normal) 
+  h6: (size: 1rem,   weight: 300, style: normal)  
   // example: type-h1, type-h2
 );
 
@@ -71,9 +71,4 @@ p {
 @import "variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap/scss/utilities";
-
-
-
-
-
 
