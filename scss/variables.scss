@@ -57,6 +57,7 @@ $custom-border-colors: (
 // Create your custom bg-hover colors
 $bg-hover-colors: (
   "claudia1": #6c5ce7, //bg-hover-claudia1
+  "claudia2": #a29bfe, //bg-hover-claudia1
   
 );
 @mixin bg-hover($color) {
