@@ -32,7 +32,6 @@ $custom-hover-colors: (
 
 /////////////////////////////////////////////////
 
-// Create your custom border-hover colors
 $custom-border-colors: (
   "myborder": #6c5ce7, //border-claudia-border
   
@@ -49,7 +48,7 @@ $custom-border-colors: (
 // Create your no-border-hover
 .no-border-hover {
   &:hover {
-    border: none !important; // !important is used for overriding Bootstrap's default styles
+    border: none !important; 
   }
 }
 
@@ -60,16 +59,12 @@ $bg-hover-colors: (
   "claudia1": #6c5ce7, //bg-hover-claudia1
   
 );
-
-// Mixin to generate hover background classes
 @mixin bg-hover($color) {
   transition: background-color 0.3s ease;
   &:hover {
     background-color: $color !important;
   }
 }
-
-// Loop to create each class
 @each $name, $color in $bg-hover-colors {
   .bg-hover-#{$name} {
     @include bg-hover($color);

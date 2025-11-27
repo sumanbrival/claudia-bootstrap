@@ -1,3 +1,4 @@
+/////////// custom-padding and mergin
 $spacers: (
   0: 0,
   1: $spacer * 0.5, // 0.625rem with $spacer at 1.25rem
@@ -30,14 +31,72 @@ $spacers: (
   @include media-breakpoint-up(sm) {
     max-width: 400px;   // Video size on small devices
   }
-
   // MD (≥768px)
   @include media-breakpoint-up(md) {
     max-width: 700px;   // Video size on medium devices
   }
-
   // LG (≥992px)
   @include media-breakpoint-up(lg) {
     max-width: 900px;   // Video size on large devices
   }
+}
+
+//////////////////////////////////////////
+/// custom-widths
+
+$custom-widths: (
+  25: 25%,    // produces .w-*-25
+  33: 33.3333%,
+  50: 50%,
+  66: 66.6667%,
+  75: 75%,
+  100: 100%,
+  300: 300px, // you can mix px / % / rem
+  480: 480px, // w-sm-50 / w-md-300 
+  580: 580px,  
+  620: 620px,  
+);
+
+$generate-bps: (sm, md, lg, xl, xxl);
+
+@function breakpoint-min($bp) {
+  @return map-get($grid-breakpoints, $bp);
+}
+
+@each $bp in $generate-bps {
+  @if map-has-key($grid-breakpoints, $bp) {
+    $min: breakpoint-min($bp);
+
+    @media (min-width: $min) {
+      @each $k, $w in $custom-widths {
+        .w-#{$bp}-#{$k} {
+          width: $w !important;
+          max-width: none !important;  
+        }
+      }
+    }
+
+    $next: null;
+    $found-next: false;
+    @each $bp2, $val2 in $grid-breakpoints {
+      @if $found-next {
+        $next: $val2;
+        @break;
+      }
+      @if $bp2 == $bp {
+        $found-next: true;
+      }
+    }
+
+    @if $next != null {
+      @media (min-width: $min) and (max-width: ($next - 0.02px)) {
+        @each $k, $w in $custom-widths {
+          .w-#{$bp}-only-#{$k} {
+            width: $w !important;
+            max-width: none !important;
+          }
+        }
+      }
+    }
+  } 
 }
