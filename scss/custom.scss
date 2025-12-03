@@ -17,12 +17,12 @@ $font-family-base: $body-font !default;
 $headings-font-family: $heading-font;
 
 $type-scale: (
-  h1: (size: 3rem,   weight: 800, style: normal),
-  h2: (size: 2.5rem, weight: 700, style: normal),
-  h3: (size: 2rem,   weight: 600, style: normal),
-  h4: (size: 1.10rem, weight: 500, style: normal),
-  h5: (size: 1.15rem,weight: 400, style: normal),
-  h6: (size: 1rem,   weight: 300, style: normal)  
+  h1: (size: 3rem,    weight: 800, style: normal),
+  h2: (size: 2.5rem,  weight: 700, style: normal),
+  h3: (size: 2rem,    weight: 600, style: normal),
+  h4: (size: 1.50rem, weight: 500, style: normal),
+  h5: (size: 1.20rem, weight: 400, style: normal),
+  h6: (size: 1.10rem, weight: 300, style: normal)  
   // example: type-h1, type-h2
 );
 
@@ -31,8 +31,8 @@ $type-scale: (
   font-size: map-get($props, size);
   font-weight: map-get($props, weight);
   font-style: map-get($props, style);
-  line-height: 1.2;
-  margin: 0 0 0.5rem 0;
+  line-height: 0;
+  margin: 0 0 0 0;
 }
 
 @each $name, $props in $type-scale {
@@ -47,15 +47,15 @@ $type-scale: (
   }
 }
 
-$p-default: (size: 1rem, weight: 300, style: normal);
+$p-default: (size: 0.9rem, weight: 400, style: normal);
 
 p {
   font-family: $body-font;
   font-size: map-get($p-default, size);
   font-weight: map-get($p-default, weight);
   font-style: map-get($p-default, style);
-  line-height: 1.6;
-  margin: 0 0 1rem 0;
+  line-height: 0;
+  margin: 0 0 0 0;
 }
 
 .type-p {

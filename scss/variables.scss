@@ -6,6 +6,7 @@ $theme-colors: (
 $custom-colors: (
   "roxo1": #a29bfe,
   "roxo2": #6c5ce7,
+  "cinza": #a4b0be, //text-cinza
 
 );
 
@@ -28,6 +29,12 @@ $custom-hover-colors: (
       color: $color !important;
     }
   }
+}
+
+/////////////////////////////////////////////////
+
+.my-text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /////////////////////////////////////////////////
