@@ -46,15 +46,22 @@ $spacers: (
 
 $custom-widths: (
   25: 25%,    // produces .w-*-25
-  33: 33.3333%,
+  30: 30%,
   50: 50%,
   66: 66.6667%,
   75: 75%,
   100: 100%,
+  80: 80px,
+  250: 250px,
   300: 300px, // you can mix px / % / rem
+  380: 380px, // you can mix px / % / rem
+  400: 400px, // you can mix px / % / rem
   480: 480px, // w-sm-50 / w-md-300 
+  520: 520px, // w-sm-50 / w-md-300 
+  550: 550px, // w-sm-50 / w-md-300 
   580: 580px,  
   620: 620px,  
+  700: 700px,  
 );
 
 $generate-bps: (sm, md, lg, xl, xxl);
