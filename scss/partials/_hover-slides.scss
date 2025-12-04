@@ -1,0 +1,61 @@
+// _hover-slides.scss
+// Simple, reusable hover-slide utilities
+// Usage: add .slide-right (or -left, -up, -down) to the element or to a child inside a hoverable parent.
+
+$slide-sizes: (
+  sm: 4px,
+  md: 8px,
+  lg: 12px
+) !default;
+
+$slide-duration: 220ms !default;
+$slide-easing: cubic-bezier(.2,.9,.3,1) !default;
+$use-3d: true !default; // use translate3d for smoother GPU-accelerated transforms
+
+// helper to build translate string
+@function _translate($x, $y) {
+  @if $use-3d {
+    @return unquote("translate3d(#{$x}, #{$y}, 0)");
+  }
+  @return unquote("translate(#{$x}, #{$y})");
+}
+
+// base slide mixin
+@mixin slide-hover($x: 0, $y: 0, $duration: $slide-duration, $easing: $slide-easing) {
+  display: inline-block; // keep transforms local and predictable
+  transition: transform $duration $easing;
+  will-change: transform;
+
+  // ensure starting transform doesn't break layout
+  transform: translate(0, 0);
+
+  // Respond to user's reduced-motion preference
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+
+  // When the element itself is hovered
+  &:hover,
+  &.hover, // allow adding .hover class via JS
+  &.is-hover { // some frameworks use is-hover
+    transform: _translate($x, $y);
+  }
+
+  // Also support parent hover: if you want parent:hover child slides
+  // Usage: on parent element add .hover-parent and put .slide-* on child
+  .hover-parent &:hover {
+    transform: _translate($x, $y);
+  }
+}
+
+// generate classes for directions and sizes
+@each $name, $distance in $slide-sizes {
+  .slide-right-#{$name} { @include slide-hover($distance, 0); } 
+  .slide-left-#{$name}  { @include slide-hover(-$distance, 0); }
+  .slide-up-#{$name}    { @include slide-hover(0, -$distance); }
+  .slide-down-#{$name}  { @include slide-hover(0, $distance); }
+} 
+
+// slide-right-sm, slide-left-sm, slide-up-sm, slide-down-sm
+// slide-right-md, slide-left-md, slide-up-md, slide-down-md
+// slide-right-lg, slide-left-lg, slide-up-lg, slide-down-lg
