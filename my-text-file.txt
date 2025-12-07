@@ -1,0 +1,35 @@
+<!-- Fisioterapia / Chiropractic Therapy / Massagem terapêutica-->
+
+    <div class="mt-5 mt-md-8 mt-lg-2 d-md-flex gap-md-2 d-lg-flex gap-lg-2">
+
+      <!-- Fisioterapia -->
+      <div class="card mt-2 mt-md-0 mt-lg-0 mx-auto" style="width: 18rem;">
+        <img src="tratamentos-img/fisioterapia.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Fisioterapia</h5>
+          <p class="card-text fw-light lh-sm">A fisioterapia é um dos principais serviços que oferecemos. Nossos fisioterapeutas trabalham em estreita colaboração com os pacientes para ajudá-los a melhorar seu potencial de movimento e alcançar uma vida mais saudável e ativa.</p>
+          <a href="#" class="text-decoration-none slide-right-sm">Saiba mais <i class="fa-solid fa-caret-right "></i></a>
+        </div>
+      </div>
+
+      <!-- Terapia Quiroprática -->
+      <div class="card mt-2 mt-md-0 mt-lg-0 mx-auto" style="width: 18rem;">
+        <img src="tratamentos-img/quiropraxia.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Terapia Quiroprática</h5>
+          <p class="card-text fw-light lh-sm">Somos uma das clínicas de quiropraxia mais avançadas e contamos com os equipamentos mais modernos, que auxiliam nossos médicos no diagnóstico e tratamento de dores nas costas, problemas de coluna, dores no pescoço e muito mais…</p>
+          <a href="#" class="text-decoration-none slide-right-sm">Saiba mais <i class="fa-solid fa-caret-right "></i></a>
+        </div>
+      </div>
+
+      <!-- Massagem terapêutica -->
+      <div class="card mt-2 mt-md-0 mt-lg-0 mx-auto" style="width: 18rem;">
+        <img src="tratamentos-img/massagem.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Massagem terapêutica</h5>
+          <p class="card-text fw-light lh-sm">A massagem terapêutica é um tratamento manual que envolve a manipulação dos tecidos moles do corpo para prevenir e aliviar dores, desconfortos e espasmos musculares. Massagem terapêutica…</p>
+          <a href="#" class="text-decoration-none slide-right-sm">Saiba mais <i class="fa-solid fa-caret-right "></i></a>
+        </div>
+      </div>
+
+    </div>
