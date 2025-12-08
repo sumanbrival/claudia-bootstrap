@@ -541,6 +541,10 @@ p {
     width: 80px !important;
     max-width: none !important;
   }
+  .w-sm-240 {
+    width: 240px !important;
+    max-width: none !important;
+  }
   .w-sm-250 {
     width: 250px !important;
     max-width: none !important;
@@ -619,6 +623,10 @@ p {
     width: 80px !important;
     max-width: none !important;
   }
+  .w-sm-only-240 {
+    width: 240px !important;
+    max-width: none !important;
+  }
   .w-sm-only-250 {
     width: 250px !important;
     max-width: none !important;
@@ -691,6 +699,10 @@ p {
   }
   .w-md-80 {
     width: 80px !important;
+    max-width: none !important;
+  }
+  .w-md-240 {
+    width: 240px !important;
     max-width: none !important;
   }
   .w-md-250 {
@@ -770,6 +782,10 @@ p {
     width: 80px !important;
     max-width: none !important;
   }
+  .w-md-only-240 {
+    width: 240px !important;
+    max-width: none !important;
+  }
   .w-md-only-250 {
     width: 250px !important;
     max-width: none !important;
@@ -842,6 +858,10 @@ p {
   }
   .w-lg-80 {
     width: 80px !important;
+    max-width: none !important;
+  }
+  .w-lg-240 {
+    width: 240px !important;
     max-width: none !important;
   }
   .w-lg-250 {
@@ -920,6 +940,10 @@ p {
     width: 80px !important;
     max-width: none !important;
   }
+  .w-lg-only-240 {
+    width: 240px !important;
+    max-width: none !important;
+  }
   .w-lg-only-250 {
     width: 250px !important;
     max-width: none !important;
@@ -992,6 +1016,10 @@ p {
   }
   .w-xl-80 {
     width: 80px !important;
+    max-width: none !important;
+  }
+  .w-xl-240 {
+    width: 240px !important;
     max-width: none !important;
   }
   .w-xl-250 {
@@ -1069,6 +1097,10 @@ p {
     width: 80px !important;
     max-width: none !important;
   }
+  .w-xl-only-240 {
+    width: 240px !important;
+    max-width: none !important;
+  }
   .w-xl-only-250 {
     width: 250px !important;
     max-width: none !important;
@@ -1141,6 +1173,10 @@ p {
   }
   .w-xxl-80 {
     width: 80px !important;
+    max-width: none !important;
+  }
+  .w-xxl-240 {
+    width: 240px !important;
     max-width: none !important;
   }
   .w-xxl-250 {
