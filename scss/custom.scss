@@ -66,11 +66,31 @@ p {
   line-height: 1.6; // example: type-p
 }
 
+
 @import "partials/hover-slides";
 @import "partials/hidden-on-lg";
 @import "partials/responsive-video";
 @import "utlities.scss";
 @import "variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/bootstrap/scss/utilities";
 
+// 2. Override fs utility
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": (
+      property: font-size,
+      class: fs,
+      values: (
+        1: 3rem,     // Your custom size
+        2: 2.5rem,
+        3: 2rem,
+        4: 1.5rem,
+        5: 1rem,
+        6: 0.75rem,
+        7: 0.50rem
+      )
+    )
+  )
+);
+@import "../node_modules/bootstrap/scss/utilities";
