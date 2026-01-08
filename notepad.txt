@@ -1,13 +1,13 @@
-Fisioterapia
-Quiropraxia
-Massagem
-Drenagem linfática
-Limpeza de pele
-Peling
-Pós-operatório
-Tratamento facias
-Acupuntura
-Terapia neural
+fisioterapia
+quiropraxia
+massagem
+drenagem linfática
+limpeza de pele
+peling
+pós-operatório
+tratamento facias
+acupuntura
+terapia neural
 
 
 +55 1197114-0308
